@@ -1,5 +1,6 @@
 import { solutions } from "../data/content";
 import SectionHeading from "./SectionHeading";
+import SpotlightCard from "./reactbits/SpotlightCard";
 
 export default function Solutions() {
   return (
@@ -12,21 +13,31 @@ export default function Solutions() {
           subtitle={solutions.subtitle}
         />
 
-        <div className="mt-14 grid grid-cols-1 gap-5 md:grid-cols-3">
+        <div className="relative mt-14 grid grid-cols-1 gap-5 md:grid-cols-3">
+          {/* connecting timeline rail (desktop) */}
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-x-8 top-7 hidden h-px bg-gradient-to-r from-transparent via-[var(--c-line-strong)] to-transparent md:block"
+          />
+
           {solutions.items.map((s, i) => (
-            <article
+            <div
               key={s.no}
-              data-reveal
-              style={{ ["--reveal-delay" as string]: `${i * 100}ms` }}
-              className="card-hover group surface relative flex flex-col rounded-3xl p-7 sm:p-8"
+              data-reveal="clip"
+              style={{ ["--reveal-delay" as string]: `${i * 110}ms` }}
             >
-              {/* big ghost numeral */}
-              <span className="pointer-events-none absolute right-5 top-3 font-mono text-6xl font-bold text-white/[0.04] transition-colors group-hover:text-white/[0.07]">
+            <SpotlightCard className="group glass relative flex h-full flex-col overflow-hidden rounded-3xl p-7 sm:p-8">
+              {/* step node */}
+              <span className="relative z-10 grid h-12 w-12 place-items-center rounded-2xl border border-[var(--c-line-strong)] bg-[var(--color-abyss)] font-mono text-lg font-bold text-gradient">
                 {s.no}
               </span>
 
-              <span className="eyebrow">Solution {s.no}</span>
-              <h3 className="mt-4 max-w-[14rem] font-display text-xl font-semibold leading-snug">
+              {/* big ghost numeral */}
+              <span className="pointer-events-none absolute right-5 top-3 font-mono text-6xl font-bold text-white/[0.04] transition-colors duration-500 group-hover:text-white/[0.08]">
+                {s.no}
+              </span>
+
+              <h3 className="mt-6 max-w-[14rem] font-display text-xl font-semibold leading-snug">
                 {s.title}
               </h3>
 
@@ -60,7 +71,8 @@ export default function Solutions() {
                   </li>
                 ))}
               </ul>
-            </article>
+            </SpotlightCard>
+            </div>
           ))}
         </div>
       </div>

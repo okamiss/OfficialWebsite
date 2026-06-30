@@ -1,0 +1,556 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "零壹 01 首页" [ref=e6] [cursor=pointer]:
+        - /url: "#home"
+        - generic [ref=e7]: "01"
+        - generic [ref=e9]:
+          - generic [ref=e10]: 零壹
+          - generic [ref=e11]: ZERO·ONE
+      - navigation [ref=e12]:
+        - link "首页" [ref=e13] [cursor=pointer]:
+          - /url: "#home"
+          - text: 首页
+        - link "产品" [ref=e15] [cursor=pointer]:
+          - /url: "#products"
+        - link "解决方案" [ref=e16] [cursor=pointer]:
+          - /url: "#solutions"
+        - link "关于我们" [ref=e17] [cursor=pointer]:
+          - /url: "#about"
+        - link "联系我们" [ref=e18] [cursor=pointer]:
+          - /url: "#contact"
+      - generic [ref=e19]:
+        - link "查看产品" [ref=e20] [cursor=pointer]:
+          - /url: "#products"
+        - link "联系合作" [ref=e21] [cursor=pointer]:
+          - /url: "#contact"
+  - main [ref=e22]:
+    - generic [ref=e23]:
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - generic [ref=e31]: AI Native · SaaS · Automation
+          - heading "零壹科技 从 0 到 1 构建未来产品" [level=1] [ref=e32]:
+            - generic "零壹科技" [ref=e33]:
+              - generic [ref=e34]:
+                - generic [ref=e35]: 零
+                - generic [ref=e36]: 壹
+                - generic [ref=e37]: 科
+                - generic [ref=e38]: 技
+            - generic [ref=e39]: 从 0 到 1
+            - generic "构建未来产品" [ref=e40]:
+              - generic [ref=e41]:
+                - generic [ref=e42]: 构
+                - generic [ref=e43]: 建
+                - generic [ref=e44]: 未
+                - generic [ref=e45]: 来
+                - generic [ref=e46]: 产
+                - generic [ref=e47]: 品
+          - paragraph [ref=e48]:
+            - generic [ref=e49]: 我
+            - generic [ref=e50]: 们
+            - generic [ref=e51]: 专
+            - generic [ref=e52]: 注
+            - generic [ref=e53]: 于
+            - generic [ref=e55]: A
+            - generic [ref=e56]: I
+            - generic [ref=e57]: 、
+            - generic [ref=e58]: S
+            - generic [ref=e59]: a
+            - generic [ref=e60]: a
+            - generic [ref=e61]: S
+            - generic [ref=e62]: 、
+            - generic [ref=e63]: 智
+            - generic [ref=e64]: 能
+            - generic [ref=e65]: 工
+            - generic [ref=e66]: 具
+            - generic [ref=e67]: 与
+            - generic [ref=e68]: 互
+            - generic [ref=e69]: 联
+            - generic [ref=e70]: 网
+            - generic [ref=e71]: 产
+            - generic [ref=e72]: 品
+            - generic [ref=e73]: 研
+            - generic [ref=e74]: 发
+            - generic [ref=e75]: ，
+            - generic [ref=e76]: 将
+            - generic [ref=e77]: 想
+            - generic [ref=e78]: 法
+            - generic [ref=e79]: 快
+            - generic [ref=e80]: 速
+            - generic [ref=e81]: 转
+            - generic [ref=e82]: 化
+            - generic [ref=e83]: 为
+            - generic [ref=e84]: 可
+            - generic [ref=e85]: 落
+            - generic [ref=e86]: 地
+            - generic [ref=e87]: 、
+            - generic [ref=e88]: 可
+            - generic [ref=e89]: 增
+            - generic [ref=e90]: 长
+            - generic [ref=e91]: 、
+            - generic [ref=e92]: 可
+            - generic [ref=e93]: 商
+            - generic [ref=e94]: 业
+            - generic [ref=e95]: 化
+            - generic [ref=e96]: 的
+            - generic [ref=e97]: 数
+            - generic [ref=e98]: 字
+            - generic [ref=e99]: 产
+            - generic [ref=e100]: 品
+            - generic [ref=e101]: 。
+          - generic [ref=e102]:
+            - generic [ref=e103]: AI Native
+            - generic [ref=e104]: SaaS
+            - generic [ref=e105]: Automation
+            - generic [ref=e106]: Knowledge Base
+            - generic [ref=e107]: Web App
+            - generic [ref=e108]: Mini Program
+          - generic [ref=e109]:
+            - link "探索产品" [ref=e110] [cursor=pointer]:
+              - /url: "#products"
+              - text: 探索产品
+              - generic [ref=e111]: →
+            - link "联系我们" [ref=e112] [cursor=pointer]:
+              - /url: "#contact"
+        - generic [ref=e114]:
+          - generic [ref=e116]:
+            - generic [ref=e117]: AI
+            - generic [ref=e118]:
+              - generic [ref=e119]: Model
+              - generic [ref=e120]: RAG · online
+          - generic [ref=e122]:
+            - generic [ref=e128]: 01://console
+            - generic [ref=e129]:
+              - generic [ref=e130]:
+                - generic [ref=e131]:
+                  - generic [ref=e132]: "0"
+                  - generic [ref=e133]: idea
+                - img [ref=e136]
+                - generic [ref=e138]:
+                  - generic [ref=e139]: "1"
+                  - generic [ref=e140]: product
+              - generic [ref=e154]:
+                - generic [ref=e155]:
+                  - generic [ref=e156]: 100%
+                  - generic [ref=e157]: Deploy
+                - generic [ref=e158]:
+                  - generic [ref=e159]: 42ms
+                  - generic [ref=e160]: Latency
+                - generic [ref=e161]:
+                  - generic [ref=e162]: 99.9%
+                  - generic [ref=e163]: Uptime
+          - generic [ref=e164]:
+            - generic [ref=e165]: BUILD
+            - generic [ref=e166]: zero → one
+      - generic [ref=e169]:
+        - generic [ref=e170]:
+          - generic [ref=e171]: AI Native
+          - generic [ref=e172]: ◇
+          - generic [ref=e173]: Large Language Models
+          - generic [ref=e174]: ◇
+          - generic [ref=e175]: RAG
+          - generic [ref=e176]: ◇
+          - generic [ref=e177]: Agent
+          - generic [ref=e178]: ◇
+          - generic [ref=e179]: SaaS
+          - generic [ref=e180]: ◇
+          - generic [ref=e181]: Multi-Tenant
+          - generic [ref=e182]: ◇
+          - generic [ref=e183]: Automation
+          - generic [ref=e184]: ◇
+          - generic [ref=e185]: Knowledge Base
+          - generic [ref=e186]: ◇
+          - generic [ref=e187]: Web App
+          - generic [ref=e188]: ◇
+          - generic [ref=e189]: Mini Program
+          - generic [ref=e190]: ◇
+          - generic [ref=e191]: Cocos
+          - generic [ref=e192]: ◇
+          - generic [ref=e193]: End-to-End Delivery
+          - generic [ref=e194]: ◇
+          - generic [ref=e195]: From Zero to One
+          - generic [ref=e196]: ◇
+        - generic [ref=e197]:
+          - generic [ref=e198]: AI Native
+          - generic [ref=e199]: ◇
+          - generic [ref=e200]: Large Language Models
+          - generic [ref=e201]: ◇
+          - generic [ref=e202]: RAG
+          - generic [ref=e203]: ◇
+          - generic [ref=e204]: Agent
+          - generic [ref=e205]: ◇
+          - generic [ref=e206]: SaaS
+          - generic [ref=e207]: ◇
+          - generic [ref=e208]: Multi-Tenant
+          - generic [ref=e209]: ◇
+          - generic [ref=e210]: Automation
+          - generic [ref=e211]: ◇
+          - generic [ref=e212]: Knowledge Base
+          - generic [ref=e213]: ◇
+          - generic [ref=e214]: Web App
+          - generic [ref=e215]: ◇
+          - generic [ref=e216]: Mini Program
+          - generic [ref=e217]: ◇
+          - generic [ref=e218]: Cocos
+          - generic [ref=e219]: ◇
+          - generic [ref=e220]: End-to-End Delivery
+          - generic [ref=e221]: ◇
+          - generic [ref=e222]: From Zero to One
+          - generic [ref=e223]: ◇
+    - generic [ref=e227]:
+      - generic [ref=e228]:
+        - generic [ref=e229]:
+          - generic [ref=e230]: "0x01"
+          - generic [ref=e232]: Capabilities
+        - heading "我们擅长把技术变成产品" [level=2] [ref=e233]:
+          - generic [ref=e234]:
+            - generic [ref=e235]: 我
+            - generic [ref=e236]: 们
+            - generic [ref=e237]: 擅
+            - generic [ref=e238]: 长
+            - generic [ref=e239]: 把
+            - generic [ref=e240]: 技
+            - generic [ref=e241]: 术
+            - generic [ref=e242]: 变
+            - generic [ref=e243]: 成
+            - generic [ref=e244]: 产
+            - generic [ref=e245]: 品
+        - paragraph [ref=e246]: 从模型到界面，从架构到交付 —— 全栈能力，闭环落地。
+      - generic [ref=e247]:
+        - generic [ref=e249]:
+          - generic [ref=e252]: "01"
+          - heading "AI 产品研发" [level=3] [ref=e255]
+          - paragraph [ref=e256]: 基于大模型、知识库、RAG、智能问答等能力，构建企业级 AI 应用。
+          - generic [ref=e257]:
+            - generic [ref=e258]: "#LLM"
+            - generic [ref=e259]: "#RAG"
+            - generic [ref=e260]: "#Agent"
+        - generic [ref=e262]:
+          - generic [ref=e265]: "02"
+          - heading "SaaS 系统开发" [level=3] [ref=e268]
+          - paragraph [ref=e269]: 支持多租户、权限管理、订阅计费、数据看板和企业级后台。
+          - generic [ref=e270]:
+            - generic [ref=e271]: "#多租户"
+            - generic [ref=e272]: "#计费"
+            - generic [ref=e273]: "#看板"
+        - generic [ref=e275]:
+          - generic [ref=e278]: "03"
+          - heading "Web / 小程序 / App" [level=3] [ref=e281]
+          - paragraph [ref=e282]: 覆盖官网、管理后台、移动端、小程序和跨平台应用。
+          - generic [ref=e283]:
+            - generic [ref=e284]: "#Web"
+            - generic [ref=e285]: "#小程序"
+            - generic [ref=e286]: "#App"
+        - generic [ref=e288]:
+          - generic [ref=e291]: "04"
+          - heading "自动化与效率工具" [level=3] [ref=e294]
+          - paragraph [ref=e295]: 帮助企业优化流程，提升内容、客服、运营和协作效率。
+          - generic [ref=e296]:
+            - generic [ref=e297]: "#流程"
+            - generic [ref=e298]: "#客服"
+            - generic [ref=e299]: "#协作"
+    - generic [ref=e301]:
+      - generic [ref=e302]:
+        - generic [ref=e303]:
+          - generic [ref=e304]: "0x02"
+          - generic [ref=e306]: Product Matrix
+        - heading "我们的产品矩阵" [level=2] [ref=e307]:
+          - generic [ref=e308]:
+            - generic [ref=e309]: 我
+            - generic [ref=e310]: 们
+            - generic [ref=e311]: 的
+            - generic [ref=e312]: 产
+            - generic [ref=e313]: 品
+            - generic [ref=e314]: 矩
+            - generic [ref=e315]: 阵
+        - paragraph [ref=e316]: 已落地与持续孵化中的产品，覆盖 AI、隐私通信、内容平台与互动娱乐。
+      - generic [ref=e317]:
+        - generic [ref=e319]:
+          - generic [ref=e321]:
+            - generic [ref=e322]:
+              - generic [ref=e323]: PRODUCT / 01
+              - heading "零壹 AI 企业知识库助手" [level=3] [ref=e324]
+            - generic [ref=e325]: AI SaaS / 企业知识库
+          - paragraph [ref=e326]: 面向企业内部资料管理与智能问答场景，支持企业上传文档，员工通过企业微信、网页端等入口进行提问，AI 基于企业知识库给出准确回答，提升内部协作和知识流转效率。
+          - generic [ref=e327]:
+            - generic [ref=e328]: AI 知识库
+            - generic [ref=e329]: 企业微信
+            - generic [ref=e330]: RAG
+            - generic [ref=e331]: 多租户
+            - generic [ref=e332]: 文档解析
+        - generic [ref=e334]:
+          - generic [ref=e336]:
+            - generic [ref=e337]:
+              - generic [ref=e338]: PRODUCT / 02
+              - heading "EncryptedChat 加密聊天" [level=3] [ref=e339]
+            - generic [ref=e340]: 隐私通信工具
+          - paragraph [ref=e341]: 一款注重隐私保护的加密聊天产品，支持用户、好友、群组等基础通信能力，目标是让用户拥有更安全、更私密的在线沟通体验。
+          - generic [ref=e342]:
+            - generic [ref=e343]: 端到端加密
+            - generic [ref=e344]: 隐私保护
+            - generic [ref=e345]: 聊天系统
+            - generic [ref=e346]: Web App
+        - generic [ref=e348]:
+          - generic [ref=e350]:
+            - generic [ref=e351]:
+              - generic [ref=e352]: PRODUCT / 03
+              - heading "DollyVault 图片聚合平台" [level=3] [ref=e353]
+            - generic [ref=e354]: 内容聚合 / 图片展示
+          - paragraph [ref=e355]: 面向垂直兴趣内容的图片聚合与展示平台，用于整理、收藏和浏览特定主题的图片内容，适合做内容社区、图库和商品灵感库方向拓展。
+          - generic [ref=e356]:
+            - generic [ref=e357]: 图片聚合
+            - generic [ref=e358]: 内容平台
+            - generic [ref=e359]: OSS 存储
+            - generic [ref=e360]: 前后端分离
+        - generic [ref=e362]:
+          - generic [ref=e364]:
+            - generic [ref=e365]:
+              - generic [ref=e366]: PRODUCT / 04
+              - heading "小游戏与互动产品" [level=3] [ref=e367]
+            - generic [ref=e368]: 游戏 / 小程序 / 互动娱乐
+          - paragraph [ref=e369]: 探索轻量级小游戏、微信小游戏、互动活动和社区娱乐产品，覆盖塔防、2048、剧情互动等方向，用游戏化方式提升用户参与感。
+          - generic [ref=e370]:
+            - generic [ref=e371]: Cocos
+            - generic [ref=e372]: 微信小游戏
+            - generic [ref=e373]: 互动体验
+            - generic [ref=e374]: 社区活动
+    - generic [ref=e376]:
+      - generic [ref=e377]:
+        - generic [ref=e378]:
+          - generic [ref=e379]: "0x03"
+          - generic [ref=e381]: Solutions
+        - heading "为不同场景提供从 0 到 1 的产品方案" [level=2] [ref=e382]:
+          - generic [ref=e383]:
+            - generic [ref=e384]: 为
+            - generic [ref=e385]: 不
+            - generic [ref=e386]: 同
+            - generic [ref=e387]: 场
+            - generic [ref=e388]: 景
+            - generic [ref=e389]: 提
+            - generic [ref=e390]: 供
+            - generic [ref=e391]: 从
+          - generic [ref=e393]: "0"
+          - generic [ref=e395]: 到
+          - generic [ref=e397]: "1"
+          - generic [ref=e398]:
+            - generic [ref=e399]: 的
+            - generic [ref=e400]: 产
+            - generic [ref=e401]: 品
+            - generic [ref=e402]: 方
+            - generic [ref=e403]: 案
+        - paragraph [ref=e404]: 根据团队规模与业务阶段，匹配最合适的落地路径。
+      - generic [ref=e405]:
+        - generic [ref=e406]:
+          - generic [ref=e407]: "01"
+          - generic: "01"
+          - heading "企业 AI 知识库解决方案" [level=3] [ref=e408]
+          - paragraph [ref=e409]: 适合：企业内部文档、客服知识库、员工助手、培训资料问答。
+          - list [ref=e410]:
+            - listitem [ref=e411]:
+              - img [ref=e412]
+              - text: 文档智能解析
+            - listitem [ref=e414]:
+              - img [ref=e415]
+              - text: 私有化部署可选
+            - listitem [ref=e417]:
+              - img [ref=e418]
+              - text: 企业微信 / 网页接入
+        - generic [ref=e420]:
+          - generic [ref=e421]: "02"
+          - generic: "02"
+          - heading "SaaS 商业化系统解决方案" [level=3] [ref=e422]
+          - paragraph [ref=e423]: 适合：订阅制产品、企业后台、权限系统、支付计费、运营管理。
+          - list [ref=e424]:
+            - listitem [ref=e425]:
+              - img [ref=e426]
+              - text: 多租户架构
+            - listitem [ref=e428]:
+              - img [ref=e429]
+              - text: 订阅与计费
+            - listitem [ref=e431]:
+              - img [ref=e432]
+              - text: 数据看板
+        - generic [ref=e434]:
+          - generic [ref=e435]: "03"
+          - generic: "03"
+          - heading "创意产品快速孵化方案" [level=3] [ref=e436]
+          - paragraph [ref=e437]: 适合：个人创业者、小团队、内容平台、小游戏、工具站、MVP 验证。
+          - list [ref=e438]:
+            - listitem [ref=e439]:
+              - img [ref=e440]
+              - text: MVP 快速验证
+            - listitem [ref=e442]:
+              - img [ref=e443]
+              - text: 全栈一体交付
+            - listitem [ref=e445]:
+              - img [ref=e446]
+              - text: 上线即可增长
+    - generic [ref=e450]:
+      - generic [ref=e453]:
+        - generic [ref=e454]:
+          - generic [ref=e455]: "0x04"
+          - generic [ref=e457]: Why 01
+        - heading "从一行代码，到一份商业价值" [level=2] [ref=e458]:
+          - generic [ref=e459]:
+            - generic [ref=e460]: 从
+            - generic [ref=e461]: 一
+            - generic [ref=e462]: 行
+            - generic [ref=e463]: 代
+            - generic [ref=e464]: 码
+            - generic [ref=e465]: ，
+            - generic [ref=e466]: 到
+            - generic [ref=e467]: 一
+            - generic [ref=e468]: 份
+            - generic [ref=e469]: 商
+            - generic [ref=e470]: 业
+            - generic [ref=e471]: 价
+            - generic [ref=e472]: 值
+      - generic [ref=e473]:
+        - generic [ref=e474]:
+          - generic [ref=e475]: "01"
+          - generic [ref=e476]: From Zero to One
+          - paragraph [ref=e477]: 从 0 到 1 的产品孵化能力，陪跑想法到上线。
+        - generic [ref=e479]:
+          - generic [ref=e480]: AI
+          - generic [ref=e481]: Models in Production
+          - paragraph [ref=e482]: 大模型应用落地，RAG 与智能体工程化。
+        - generic [ref=e484]:
+          - generic [ref=e485]: SaaS
+          - generic [ref=e486]: Enterprise Architecture
+          - paragraph [ref=e487]: 企业级系统架构，多租户、计费与权限。
+        - generic [ref=e489]:
+          - generic [ref=e490]: Full Stack
+          - generic [ref=e491]: End to End Delivery
+          - paragraph [ref=e492]: 前后端一体化交付，设计、研发到运维。
+    - generic [ref=e495]:
+      - generic [ref=e496]:
+        - generic [ref=e498]:
+          - generic [ref=e499]: "0"
+          - generic [ref=e500]: ✦
+          - generic [ref=e501]: "1"
+        - generic [ref=e502]: FROM ZERO TO ONE
+      - generic [ref=e503]:
+        - generic [ref=e504]:
+          - generic [ref=e505]: "0x05"
+          - generic [ref=e507]: About 零壹
+        - heading "一家面向未来的技术产品工作室" [level=2] [ref=e508]:
+          - generic [ref=e509]:
+            - generic [ref=e510]: 一
+            - generic [ref=e511]: 家
+            - generic [ref=e512]: 面
+            - generic [ref=e513]: 向
+            - generic [ref=e514]: 未
+            - generic [ref=e515]: 来
+            - generic [ref=e516]: 的
+            - generic [ref=e517]: 技
+            - generic [ref=e518]: 术
+            - generic [ref=e519]: 产
+            - generic [ref=e520]: 品
+            - generic [ref=e521]: 工
+            - generic [ref=e522]: 作
+            - generic [ref=e523]: 室
+        - paragraph [ref=e524]: 零壹是一家面向未来的技术产品工作室。我们相信，每一个伟大的产品都开始于 0，但真正的价值来自迈出 1 的那一步。我们关注 AI、SaaS、自动化、内容平台和互动产品，致力于用技术帮助想法快速落地。
+        - generic [ref=e525]:
+          - generic [ref=e526]:
+            - term [ref=e527]: Focus
+            - definition [ref=e528]: AI · SaaS · 自动化 · 内容 · 互动
+          - generic [ref=e529]:
+            - term [ref=e530]: Belief
+            - definition [ref=e531]: 0 是起点，1 是价值
+          - generic [ref=e532]:
+            - term [ref=e533]: Way
+            - definition [ref=e534]: 规划 → 设计 → 开发 → 上线
+    - generic [ref=e539]:
+      - generic [ref=e540]:
+        - generic [ref=e541]: "0x06"
+        - generic [ref=e543]: Let's Build
+      - heading "有想法？让我们一起从 0 到 1。" [level=2] [ref=e544]:
+        - generic [ref=e545]:
+          - generic [ref=e546]: 有
+          - generic [ref=e547]: 想
+          - generic [ref=e548]: 法
+          - generic [ref=e549]: ？
+          - generic [ref=e550]: 让
+          - generic [ref=e551]: 我
+          - generic [ref=e552]: 们
+          - generic [ref=e553]: 一
+          - generic [ref=e554]: 起
+          - generic [ref=e555]: 从
+        - generic [ref=e557]: "0"
+        - generic [ref=e559]: 到
+        - generic [ref=e560]:
+          - generic [ref=e561]: "1"
+          - generic [ref=e562]: 。
+      - paragraph [ref=e563]: 无论你想打造企业 AI 助手、SaaS 系统、官网、小程序、工具产品，还是一个全新的互联网项目，零壹都可以帮助你完成从规划、设计、开发到上线的全过程。
+      - generic [ref=e564]:
+        - link "联系合作" [ref=e565] [cursor=pointer]:
+          - /url: mailto:hello@lingyi01.com
+          - text: 联系合作
+          - generic [ref=e566]: →
+        - link "查看产品" [ref=e567] [cursor=pointer]:
+          - /url: "#products"
+      - generic [ref=e568]:
+        - generic [ref=e569]:
+          - generic [ref=e570]: Email
+          - generic [ref=e571]: hello@lingyi01.com
+        - generic [ref=e572]:
+          - generic [ref=e573]: WeChat
+          - generic [ref=e574]: lingyi-01
+        - generic [ref=e575]:
+          - generic [ref=e576]: Hours
+          - generic [ref=e577]: Mon – Fri · 10:00–19:00
+  - contentinfo [ref=e578]:
+    - generic [ref=e579]:
+      - generic [ref=e580]:
+        - generic [ref=e581]:
+          - link "零壹 01 首页" [ref=e582] [cursor=pointer]:
+            - /url: "#home"
+            - generic [ref=e583]: "01"
+            - generic [ref=e585]:
+              - generic [ref=e586]: 零壹
+              - generic [ref=e587]: ZERO·ONE
+          - paragraph [ref=e588]: 零壹是一家面向未来的技术产品工作室，专注 AI、SaaS、自动化与互动产品，帮助想法从 0 到 1 落地。
+          - generic [ref=e591]: FROM ZERO TO ONE
+        - navigation "产品" [ref=e592]:
+          - heading "产品" [level=4] [ref=e593]
+          - list [ref=e594]:
+            - listitem [ref=e595]:
+              - link "AI 企业知识库" [ref=e596] [cursor=pointer]:
+                - /url: "#products"
+            - listitem [ref=e597]:
+              - link "EncryptedChat" [ref=e598] [cursor=pointer]:
+                - /url: "#products"
+            - listitem [ref=e599]:
+              - link "DollyVault" [ref=e600] [cursor=pointer]:
+                - /url: "#products"
+            - listitem [ref=e601]:
+              - link "小游戏与互动" [ref=e602] [cursor=pointer]:
+                - /url: "#products"
+        - navigation "公司" [ref=e603]:
+          - heading "公司" [level=4] [ref=e604]
+          - list [ref=e605]:
+            - listitem [ref=e606]:
+              - link "关于我们" [ref=e607] [cursor=pointer]:
+                - /url: "#about"
+            - listitem [ref=e608]:
+              - link "解决方案" [ref=e609] [cursor=pointer]:
+                - /url: "#solutions"
+            - listitem [ref=e610]:
+              - link "能力" [ref=e611] [cursor=pointer]:
+                - /url: "#capabilities"
+            - listitem [ref=e612]:
+              - link "联系我们" [ref=e613] [cursor=pointer]:
+                - /url: "#contact"
+      - generic [ref=e615]:
+        - paragraph [ref=e616]: © 2026 零壹科技. All rights reserved.
+        - generic [ref=e617]:
+          - link "首页" [ref=e618] [cursor=pointer]:
+            - /url: "#home"
+          - link "产品" [ref=e619] [cursor=pointer]:
+            - /url: "#products"
+          - link "解决方案" [ref=e620] [cursor=pointer]:
+            - /url: "#solutions"
+          - link "关于我们" [ref=e621] [cursor=pointer]:
+            - /url: "#about"
+          - link "联系我们" [ref=e622] [cursor=pointer]:
+            - /url: "#contact"

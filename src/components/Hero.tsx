@@ -1,8 +1,10 @@
-import { hero } from "../data/content";
+import { hero, marquee } from "../data/content";
 import HeroConsole from "./HeroConsole";
 import Aurora from "./reactbits/Aurora";
+import SplitText from "./reactbits/SplitText";
 import BlurText from "./reactbits/BlurText";
 import ShinyText from "./reactbits/ShinyText";
+import Marquee from "./reactbits/Marquee";
 import { usePrefersReducedMotion } from "../hooks/usePrefersReducedMotion";
 
 export default function Hero() {
@@ -11,7 +13,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative overflow-hidden pt-32 pb-20 sm:pt-40 md:pt-44 md:pb-28"
+      className="relative overflow-hidden pt-32 pb-10 sm:pt-40 md:pt-44"
     >
       {/* react-bits Aurora — ambient WebGL backdrop (skipped for reduced motion) */}
       {!reduced && (
@@ -60,7 +62,7 @@ export default function Hero() {
         <div className="min-w-0">
           <div
             data-reveal
-            className="inline-flex items-center gap-2.5 rounded-full border border-[var(--c-line-strong)] bg-[rgba(255,255,255,0.03)] px-4 py-1.5"
+            className="inline-flex items-center gap-2.5 rounded-full border border-[var(--c-line-strong)] bg-[rgba(255,255,255,0.03)] px-4 py-1.5 backdrop-blur-md"
           >
             <span className="relative flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan opacity-75" />
@@ -81,14 +83,30 @@ export default function Hero() {
             )}
           </div>
 
-          <h1
-            data-reveal
-            style={{ ["--reveal-delay" as string]: "80ms" }}
-            className="mt-6 font-display text-[2.6rem] font-bold leading-[1.04] tracking-tight sm:text-6xl md:text-[4.1rem]"
-          >
-            <span className="block">{hero.title[0]}</span>
-            <span className="block text-gradient">{hero.title[1]}</span>
-            <span className="block">{hero.title[2]}</span>
+          <h1 className="mt-6 display-xl text-[2.9rem] sm:text-6xl md:text-[4.4rem]">
+            <SplitText
+              as="span"
+              text={hero.title[0]}
+              reduced={reduced}
+              startDelay={0.05}
+              className="block"
+            />
+            {/* gradient line rendered whole — background-clip:text needs the
+                glyphs as the element's own text, so it can't be char-split */}
+            <span
+              data-reveal
+              style={{ ["--reveal-delay" as string]: "320ms" }}
+              className="block text-gradient-flow"
+            >
+              {hero.title[1]}
+            </span>
+            <SplitText
+              as="span"
+              text={hero.title[2]}
+              reduced={reduced}
+              startDelay={0.6}
+              className="block"
+            />
           </h1>
 
           {reduced ? (
@@ -100,7 +118,7 @@ export default function Hero() {
               text={hero.subtitle}
               animateBy="letters"
               direction="bottom"
-              delay={18}
+              delay={14}
               stepDuration={0.3}
               className="mt-6 max-w-xl text-base leading-relaxed text-mist sm:text-lg"
             />
@@ -135,12 +153,17 @@ export default function Hero() {
 
         {/* Visual */}
         <div
-          data-reveal
+          data-reveal="scale"
           className="min-w-0"
           style={{ ["--reveal-delay" as string]: "200ms" }}
         >
           <HeroConsole />
         </div>
+      </div>
+
+      {/* keyword / tech-stack marquee strip */}
+      <div className="relative mt-16 border-y border-[var(--c-line)] bg-[rgba(255,255,255,0.015)] py-3.5 backdrop-blur-sm sm:mt-20">
+        <Marquee items={marquee} reduced={reduced} duration={38} />
       </div>
     </section>
   );

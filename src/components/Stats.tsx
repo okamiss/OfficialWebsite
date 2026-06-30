@@ -5,7 +5,7 @@ export default function Stats() {
   return (
     <section id="stats" className="relative py-24 md:py-32">
       <div className="shell">
-        <div className="overflow-hidden rounded-[1.75rem] border border-[var(--c-line)] bg-[var(--color-abyss)]">
+        <div className="glass-strong glass-irid relative overflow-hidden rounded-[1.75rem]">
           {/* banner head */}
           <div className="relative border-b border-[var(--c-line)] bg-grid px-7 py-10 sm:px-12 sm:py-12">
             <div
@@ -34,11 +34,11 @@ export default function Stats() {
             {stats.items.map((s, i) => (
               <div
                 key={s.key}
-                data-reveal
+                data-reveal="scale"
                 style={{ ["--reveal-delay" as string]: `${i * 90}ms` }}
-                className="group relative px-7 py-9 transition-colors hover:bg-[rgba(255,255,255,0.015)] sm:px-9 sm:[&:not(:nth-child(odd))]:border-l sm:[&:not(:nth-child(odd))]:border-[var(--c-line)] lg:border-l lg:border-[var(--c-line)] lg:first:border-l-0"
+                className="group relative px-7 py-9 transition-colors hover:bg-[rgba(255,255,255,0.025)] sm:px-9 sm:[&:not(:nth-child(odd))]:border-l sm:[&:not(:nth-child(odd))]:border-[var(--c-line)] lg:border-l lg:border-[var(--c-line)] lg:first:border-l-0"
               >
-                <div className="font-mono text-4xl font-bold leading-none text-gradient sm:text-5xl">
+                <div className="font-mono text-4xl font-bold leading-none text-gradient-flow sm:text-5xl">
                   {s.key}
                 </div>
                 <div className="mt-4 font-display text-sm font-semibold tracking-wide text-ink">

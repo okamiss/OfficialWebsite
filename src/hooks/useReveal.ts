@@ -1,21 +1,23 @@
 import { useEffect } from "react";
 
 /**
- * Adds `.is-visible` to every `[data-reveal]` element as it scrolls into view.
- * One shared IntersectionObserver for the whole page. Reduced-motion users
- * get content shown immediately (handled in CSS).
+ * Adds `.is-visible` to every `[data-reveal]` element as it enters the
+ * viewport. Uses a shared IntersectionObserver, plus a scroll-driven
+ * viewport sweep as a robust fallback (covers programmatic scrolls and
+ * edge timing where the observer's initial callback is missed).
+ * Reduced-motion users get content shown immediately.
  */
 export function useReveal() {
   useEffect(() => {
-    const els = Array.from(
-      document.querySelectorAll<HTMLElement>("[data-reveal]")
-    );
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-    const reduce = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
-    ).matches;
+    const revealAll = () =>
+      document
+        .querySelectorAll<HTMLElement>("[data-reveal]")
+        .forEach((el) => el.classList.add("is-visible"));
+
     if (reduce || !("IntersectionObserver" in window)) {
-      els.forEach((el) => el.classList.add("is-visible"));
+      revealAll();
       return;
     }
 
@@ -28,10 +30,42 @@ export function useReveal() {
           }
         });
       },
-      { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
+      { threshold: 0.1, rootMargin: "0px 0px -8% 0px" }
     );
 
-    els.forEach((el) => io.observe(el));
-    return () => io.disconnect();
+    document
+      .querySelectorAll<HTMLElement>("[data-reveal]:not(.is-visible)")
+      .forEach((el) => io.observe(el));
+
+    // Fallback sweep: reveal anything already within the viewport that the
+    // observer hasn't flagged yet (rAF-throttled, passive listeners).
+    let raf = 0;
+    const sweep = () => {
+      raf = 0;
+      const vh = window.innerHeight;
+      document
+        .querySelectorAll<HTMLElement>("[data-reveal]:not(.is-visible)")
+        .forEach((el) => {
+          const r = el.getBoundingClientRect();
+          if (r.top < vh * 0.92 && r.bottom > 0) {
+            el.classList.add("is-visible");
+            io.unobserve(el);
+          }
+        });
+    };
+    const onScroll = () => {
+      if (!raf) raf = requestAnimationFrame(sweep);
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll, { passive: true });
+    sweep();
+
+    return () => {
+      io.disconnect();
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+      if (raf) cancelAnimationFrame(raf);
+    };
   }, []);
 }

@@ -1,10 +1,14 @@
 import { contact } from "../data/content";
+import SplitText from "./reactbits/SplitText";
+import { usePrefersReducedMotion } from "../hooks/usePrefersReducedMotion";
 
 export default function Contact() {
+  const reduced = usePrefersReducedMotion();
+
   return (
     <section id="contact" className="relative py-24 md:py-32">
       <div className="shell">
-        <div className="relative overflow-hidden rounded-[2rem] border border-[var(--c-line-strong)] bg-[var(--color-abyss)] px-7 py-16 text-center sm:px-12 sm:py-20">
+        <div className="glass-strong glass-irid relative overflow-hidden rounded-[2rem] px-7 py-16 text-center sm:px-12 sm:py-20">
           {/* grid + glow backdrop */}
           <div className="absolute inset-0 -z-0 bg-grid bg-grid-fade opacity-70" />
           <div
@@ -20,6 +24,18 @@ export default function Contact() {
                 "radial-gradient(circle, rgba(59,109,255,0.5), transparent 60%)",
             }}
           />
+          <div
+            className="orb"
+            style={{
+              width: 380,
+              height: 300,
+              left: "8%",
+              bottom: "-25%",
+              opacity: 0.4,
+              background:
+                "radial-gradient(circle, rgba(139,92,246,0.45), transparent 60%)",
+            }}
+          />
 
           <div className="relative mx-auto max-w-2xl">
             <div data-reveal className="flex items-center justify-center gap-3">
@@ -30,13 +46,13 @@ export default function Contact() {
               <span className="eyebrow">{contact.eyebrow}</span>
             </div>
 
-            <h2
-              data-reveal
-              style={{ ["--reveal-delay" as string]: "80ms" }}
-              className="mt-6 font-display text-3xl font-bold leading-tight tracking-tight sm:text-5xl"
-            >
-              {contact.title}
-            </h2>
+            <SplitText
+              as="h2"
+              text={contact.title}
+              reduced={reduced}
+              delay={26}
+              className="mt-6 block font-display text-3xl font-bold leading-tight tracking-tight sm:text-5xl"
+            />
 
             <p
               data-reveal
@@ -55,10 +71,7 @@ export default function Contact() {
                 {contact.actions.primary.label}
                 <span aria-hidden>→</span>
               </a>
-              <a
-                href={contact.actions.secondary.href}
-                className="btn btn-ghost"
-              >
+              <a href={contact.actions.secondary.href} className="btn btn-ghost">
                 {contact.actions.secondary.label}
               </a>
             </div>
@@ -69,7 +82,10 @@ export default function Contact() {
               className="mt-12 grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-[var(--c-line)] bg-[var(--c-line)] sm:grid-cols-3"
             >
               {contact.channels.map((c) => (
-                <div key={c.k} className="bg-[var(--color-panel)] px-5 py-4">
+                <div
+                  key={c.k}
+                  className="bg-[var(--color-panel)] px-5 py-4 transition-colors hover:bg-[var(--color-abyss)]"
+                >
                   <div className="font-mono text-[0.66rem] uppercase tracking-widest text-faint">
                     {c.k}
                   </div>

@@ -37,6 +37,23 @@ export const hero = {
   },
 };
 
+/** Hero keyword/tech-stack strip (infinite marquee). */
+export const marquee = [
+  "AI Native",
+  "Large Language Models",
+  "RAG",
+  "Agent",
+  "SaaS",
+  "Multi-Tenant",
+  "Automation",
+  "Knowledge Base",
+  "Web App",
+  "Mini Program",
+  "Cocos",
+  "End-to-End Delivery",
+  "From Zero to One",
+];
+
 export const capabilities = {
   index: "0x01",
   eyebrow: "Capabilities",

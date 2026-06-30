@@ -44,7 +44,7 @@ export default function HeroConsole() {
 
       {/* Floating mini chip — top right */}
       <div
-        className="anim-float glass absolute -right-3 -top-6 z-20 hidden rounded-2xl p-3 sm:block"
+        className="anim-float glass glass-irid absolute -right-3 -top-6 z-20 hidden rounded-2xl p-3 sm:block"
         style={{ animationDelay: "-2s" }}
       >
         <div className="flex items-center gap-2">
@@ -60,7 +60,7 @@ export default function HeroConsole() {
       </div>
 
       {/* Main console */}
-      <div className="anim-float surface relative z-10 overflow-hidden rounded-3xl">
+      <div className="anim-float glass-strong glass-irid relative z-10 overflow-hidden rounded-3xl">
         {/* scanline */}
         <div className="pointer-events-none absolute inset-0 overflow-hidden">
           <div
@@ -157,7 +157,7 @@ export default function HeroConsole() {
 
       {/* Floating mini chip — bottom left */}
       <div
-        className="anim-float glass absolute -bottom-5 -left-3 z-20 hidden rounded-2xl px-4 py-3 sm:block"
+        className="anim-float glass glass-irid absolute -bottom-5 -left-3 z-20 hidden rounded-2xl px-4 py-3 sm:block"
         style={{ animationDelay: "-4s" }}
       >
         <div className="font-mono text-[0.6rem] tracking-widest text-faint">
