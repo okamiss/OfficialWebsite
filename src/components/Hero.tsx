@@ -1,12 +1,32 @@
 import { hero } from "../data/content";
 import HeroConsole from "./HeroConsole";
+import Aurora from "./reactbits/Aurora";
+import BlurText from "./reactbits/BlurText";
+import ShinyText from "./reactbits/ShinyText";
+import { usePrefersReducedMotion } from "../hooks/usePrefersReducedMotion";
 
 export default function Hero() {
+  const reduced = usePrefersReducedMotion();
+
   return (
     <section
       id="home"
       className="relative overflow-hidden pt-32 pb-20 sm:pt-40 md:pt-44 md:pb-28"
     >
+      {/* react-bits Aurora — ambient WebGL backdrop (skipped for reduced motion) */}
+      {!reduced && (
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[80%] opacity-50 [mask-image:linear-gradient(to_bottom,#000_10%,transparent_85%)]"
+        >
+          <Aurora
+            colorStops={["#22d3ee", "#3b6dff", "#8b5cf6"]}
+            amplitude={1.0}
+            blend={0.6}
+            speed={0.4}
+          />
+        </div>
+      )}
       {/* grid backdrop */}
       <div className="absolute inset-0 -z-10 bg-grid bg-grid-fade" />
       {/* ambient orbs */}
@@ -46,9 +66,19 @@ export default function Hero() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan opacity-75" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-cyan" />
             </span>
-            <span className="font-mono text-xs tracking-wider text-mist">
-              {hero.badge}
-            </span>
+            {reduced ? (
+              <span className="font-mono text-xs tracking-wider text-mist">
+                {hero.badge}
+              </span>
+            ) : (
+              <ShinyText
+                text={hero.badge}
+                speed={5}
+                color="#9aa6c4"
+                shineColor="#ffffff"
+                className="font-mono text-xs tracking-wider"
+              />
+            )}
           </div>
 
           <h1
@@ -61,13 +91,20 @@ export default function Hero() {
             <span className="block">{hero.title[2]}</span>
           </h1>
 
-          <p
-            data-reveal
-            style={{ ["--reveal-delay" as string]: "160ms" }}
-            className="mt-6 max-w-xl text-base leading-relaxed text-mist sm:text-lg"
-          >
-            {hero.subtitle}
-          </p>
+          {reduced ? (
+            <p className="mt-6 max-w-xl text-base leading-relaxed text-mist sm:text-lg">
+              {hero.subtitle}
+            </p>
+          ) : (
+            <BlurText
+              text={hero.subtitle}
+              animateBy="letters"
+              direction="bottom"
+              delay={18}
+              stepDuration={0.3}
+              className="mt-6 max-w-xl text-base leading-relaxed text-mist sm:text-lg"
+            />
+          )}
 
           <div
             data-reveal

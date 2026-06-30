@@ -38,8 +38,9 @@ src/
 ├─ index.css            # 设计令牌 / 工具类 / 动效
 ├─ data/content.ts       # ★ 全站文案（改这里即可替换内容）
 ├─ hooks/
-│  ├─ useReveal.ts        # 滚动淡入（IntersectionObserver）
-│  └─ useInView.ts        # 进入视口检测
+│  ├─ useReveal.ts             # 滚动淡入（IntersectionObserver）
+│  ├─ useInView.ts             # 进入视口检测
+│  └─ usePrefersReducedMotion.ts  # 减少动效偏好检测
 └─ components/
    ├─ Header.tsx          # 顶部导航（含移动端菜单）
    ├─ Hero.tsx + HeroConsole.tsx   # 首屏 + AI 控制台视觉
@@ -51,8 +52,32 @@ src/
    ├─ Contact.tsx         # 联系我们
    ├─ Footer.tsx          # 页脚
    ├─ SectionHeading.tsx  # 通用分区标题
-   └─ Logo.tsx            # 零壹 01 标识
+   ├─ Logo.tsx            # 零壹 01 标识
+   └─ reactbits/          # react-bits 动效组件（见下）
+      ├─ Aurora.tsx        # WebGL 极光背景（Hero）
+      ├─ BlurText.tsx      # 逐字模糊淡入（Hero 副标题）
+      ├─ CountUp.tsx       # 数字滚动（控制台指标）
+      └─ ShinyText.tsx     # 流光文字（Hero 徽章 / 页脚标语）
 ```
+
+## react-bits 动效组件
+
+首页集成了 [react-bits](https://reactbits.dev)（DavidHDev/react-bits）的几个动效组件，
+均为 **TS + Tailwind** 变体，源码已直接放入 [src/components/reactbits/](src/components/reactbits/)，
+无需 CLI 即可使用。依赖：`ogl`（Aurora 的 WebGL）+ `motion`（其余动效）。
+
+集成点（全部尊重 `prefers-reduced-motion`，关闭动效时自动降级为静态）：
+
+| 组件 | 用在哪里 |
+| --- | --- |
+| **Aurora** | Hero 顶部极光背景（青/蓝/紫渐变流动） |
+| **BlurText** | Hero 副标题逐字模糊淡入 |
+| **CountUp** | AI 控制台的 100% / 42ms / 99.9% 数字滚动 |
+| **ShinyText** | Hero 徽章、页脚 “FROM ZERO TO ONE” 流光 |
+
+> 想再加组件：到 reactbits.dev 选 **TS + Tailwind** 变体，把源码放进
+> `src/components/reactbits/`，安装它列出的依赖即可。
+> （注意：react-bits 是组件库，不是可“安装”的 Claude skill / 插件。）
 
 ## 如何修改内容
 

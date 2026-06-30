@@ -1,10 +1,20 @@
+import CountUp from "./reactbits/CountUp";
+import { usePrefersReducedMotion } from "../hooks/usePrefersReducedMotion";
+
 /**
  * Signature visual: an abstract "AI 控制台 / 数据面板".
  * Built entirely from CSS + SVG (no images). It dramatizes the 0 → 1
  * transformation that defines the 零壹 brand.
  */
 export default function HeroConsole() {
+  const reduced = usePrefersReducedMotion();
   const bars = [0.4, 0.7, 0.5, 0.9, 0.62, 0.8, 0.45, 0.72, 0.55, 0.85, 0.5, 0.68];
+
+  const metrics = [
+    { k: "Deploy", to: 100, decimals: 0, suffix: "%" },
+    { k: "Latency", to: 42, decimals: 0, suffix: "ms" },
+    { k: "Uptime", to: 99.9, decimals: 1, suffix: "%" },
+  ];
 
   return (
     <div className="relative mx-auto w-full max-w-[34rem]">
@@ -123,19 +133,20 @@ export default function HeroConsole() {
             ))}
           </div>
 
-          {/* metric rows */}
+          {/* metric rows — react-bits CountUp drives the rolling numbers */}
           <div className="grid grid-cols-3 gap-3">
-            {[
-              { k: "Deploy", v: "100%" },
-              { k: "Latency", v: "42ms" },
-              { k: "Uptime", v: "99.9%" },
-            ].map((m) => (
+            {metrics.map((m) => (
               <div
                 key={m.k}
                 className="rounded-xl border border-[var(--c-line)] bg-[rgba(255,255,255,0.02)] px-3 py-2.5"
               >
                 <div className="font-mono text-base font-bold text-ink">
-                  {m.v}
+                  {reduced ? (
+                    m.to.toFixed(m.decimals)
+                  ) : (
+                    <CountUp to={m.to} duration={1.6} />
+                  )}
+                  {m.suffix}
                 </div>
                 <div className="mt-0.5 text-[0.62rem] text-faint">{m.k}</div>
               </div>

@@ -1,7 +1,10 @@
 import { footer, nav } from "../data/content";
 import Logo from "./Logo";
+import ShinyText from "./reactbits/ShinyText";
+import { usePrefersReducedMotion } from "../hooks/usePrefersReducedMotion";
 
 export default function Footer() {
+  const reduced = usePrefersReducedMotion();
   return (
     <footer className="relative border-t border-[var(--c-line)] pt-16 pb-10">
       <div className="shell">
@@ -14,9 +17,14 @@ export default function Footer() {
             </p>
             <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-[var(--c-line)] px-3.5 py-1.5">
               <span className="h-1.5 w-1.5 rounded-full bg-cyan shadow-[0_0_8px_2px_rgba(34,211,238,0.7)]" />
-              <span className="font-mono text-[0.7rem] tracking-[0.28em] text-mist">
-                {footer.tagline.toUpperCase()}
-              </span>
+              <ShinyText
+                text={footer.tagline.toUpperCase()}
+                disabled={reduced}
+                speed={4}
+                color="#6b7699"
+                shineColor="#22d3ee"
+                className="font-mono text-[0.7rem] tracking-[0.28em]"
+              />
             </div>
           </div>
 
