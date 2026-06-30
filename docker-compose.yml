@@ -1,0 +1,10 @@
+services:
+  web:
+    build: .
+    image: lingyi01-web
+    container_name: lingyi01-web
+    # 直接对外用 80 端口；若宿主机已有 nginx 占用 80，
+    # 改成 "127.0.0.1:8080:80" 然后用宿主机 nginx 反代（见 README 部署说明）
+    ports:
+      - "80:80"
+    restart: unless-stopped

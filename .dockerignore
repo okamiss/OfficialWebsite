@@ -1,0 +1,13 @@
+node_modules
+dist
+.git
+.gitignore
+.claude
+example
+*.local
+*.log
+.playwright-mcp
+__pycache__
+*.pyc
+*.png
+README.md
