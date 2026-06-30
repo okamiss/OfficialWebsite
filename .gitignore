@@ -18,6 +18,13 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# test / tooling artifacts
+.playwright-mcp
+__pycache__/
+*.pyc
+# local screenshots in repo root
+/*.png
+
 # editor / os
 .vscode/*
 !.vscode/extensions.json
